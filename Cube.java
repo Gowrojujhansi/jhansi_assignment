@@ -1,0 +1,10 @@
+package HiearchyOFAOrganizatiom;
+
+public class Cube extends Shape {
+	@Override
+	void draw() 
+	{
+		System.out.println("The shape is CUBE");
+		
+	}
+}
