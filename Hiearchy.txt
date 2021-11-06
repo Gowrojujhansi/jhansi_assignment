@@ -1,0 +1,39 @@
+
+import java.io.*;
+import java.util.*;
+public class employee {
+	void salary()
+	{
+		int sal=25000;
+		System.out.println("The salary of an Employee is Rs:" +sal);
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		employee e1 = new employee();
+		e1.salary();
+		Manager m1=new Manager();
+		m1.salary();
+		Labour l1=new Labour();
+		l1.salary();
+	}
+
+}
+public class Manager extends employee{
+	int incentives=6000;
+	void salary()
+	{
+		int sal;
+		sal=25000+incentives;
+		System.out.println("The salary of a Manager is Rs:" +sal);
+	}
+}
+public class Labour extends employee {
+	int overtime=3;
+	void salary()
+	{
+		int sal;
+		sal=8000+(3*200);
+		System.out.println("The salary of a Labour is Rs:" +sal);
+	}
+}
